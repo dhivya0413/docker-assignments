@@ -1,0 +1,16 @@
+1. docker create --name golang_alpine_demo -p 80:80 golang:alpine
+
+2. docker start 5d
+
+curl http://localhost:8080
+
+3. docker history imagename
+
+docker login
+<enter user name and password for Docker Hub Repository>
+
+4. docker tag golang:alpine-v1 dhivya17/golang-test:golang
+[$ docker tag first-image {docker-hub-username}/{default-repo-folder-name}:first-image]
+
+5. docker push dhivya17/golang-test:golang
+[$ docker push {docker-hub-username}/{default-repo-folder-name}:first-image][]
