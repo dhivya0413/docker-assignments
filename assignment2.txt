@@ -13,4 +13,4 @@ docker login
 [$ docker tag first-image {docker-hub-username}/{default-repo-folder-name}:first-image]
 
 5. docker push dhivya17/golang-test:golang
-[$ docker push {docker-hub-username}/{default-repo-folder-name}:first-image][]
+[$ docker push {docker-hub-username}/{default-repo-folder-name}:first-image]

@@ -1,0 +1,13 @@
+//create volume
+docker volume create my_volume
+
+//create new container and attach my_volume
+➜  ~ docker run --name=container1 -d -it -v my_volume:/home ubuntu:latest sh          
+
+//copy local file to container 
+docker cp /users/dhivya.v/desktop/testfolder/foo.txt container1:/home
+
+// create another container and mount container volume
+#docker run -ti --name=Container3 --volumes-from container1 ubuntu
+
+docker run --name=container2 -d -it -v my_volume:/home ubuntu:latest sh          
